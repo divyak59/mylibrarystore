@@ -1,0 +1,31 @@
+﻿@model Book
+@{ 
+    ViewBag.Title = "Details of book";
+}
+
+<h3>Details of books</h3>
+@if (Model != null)
+{
+    <table border="1">
+        <tr>
+            <td> Book Name</td>
+            <td>@Model.BookName</td>
+        </tr>
+        <tr>
+            <td>Author Name</td>
+            <td>@Model.Author</td>
+        </tr>
+        <tr>
+            <td>ISBN Number</td>
+            <td>@Model.ISBN</td>
+        </tr>
+        <tr>
+            <td>Published Date</td>
+            <td>@Model.PublishedDate</td>
+        </tr>
+    </table>
+}
+else
+{
+    <h2>No books available</h2>
+}
