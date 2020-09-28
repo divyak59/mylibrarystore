@@ -65,6 +65,11 @@ namespace MyLibraryStore.controllers
             {
                 return NotFound();
             }
+            public IActionResult NewAction()
+            {
+                return View();
+            }
+
 
             private IEnumerable<SelectListItem> GetGenres()
             {
